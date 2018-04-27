@@ -5,6 +5,23 @@ body {
     padding-top: 5rem;
 }
 
+.grundriss {
+    position: relative;
+}
+
+.grundriss-image, .grundriss-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grundriss-grid {
+    height: 100%;
+    width: 100%;
+}
+
+
+
 .starter-template {
     padding: 3rem 1.5rem;
     text-align: center;
