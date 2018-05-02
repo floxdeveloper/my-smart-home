@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GrundrissGridComponent } from './grundriss-grid/grundriss-grid.component';
+import { PanelComponent } from './panel/panel.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { GrundrissGridComponent } from './grundriss-grid/grundriss-grid.componen
     AppComponent,
     MainComponent,
     NavbarComponent,
-    GrundrissGridComponent
+    GrundrissGridComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
