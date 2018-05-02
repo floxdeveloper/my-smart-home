@@ -10,11 +10,7 @@ import { State } from '../entity/state';
 })
 export class MainComponent implements OnInit {
   title = 'My Smart Home';
-  things: Thing[];
-
-  constructor() {
-    const bettlicht = new Thing('Bettlicht', '../assets/images/bettlicht.png', new Action('Schalter', 'RESTPFAD'), [], new State('Licht', 'RESTPFAD', '0'), []);
-   }
+  constructor() {}
 
   ngOnInit() {
   }
