@@ -17,4 +17,18 @@ export class Thing {
         this.primaryState = primaryState;
         this.states = states;
     }
+
+    /**
+     * runPrimaryAction
+     */
+    public runPrimaryAction() {
+        this.primaryAction.run();
+    }
+
+    /**
+     * runAction
+     */
+    public runAction(action: Action) {
+        action.run();
+    }
 }
