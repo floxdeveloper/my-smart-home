@@ -1,5 +1,7 @@
+import { OpenhabRestService } from './service/openhab-rest.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { GridsterModule } from 'angular-gridster2';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -22,9 +24,12 @@ import { PanelComponent } from './panel/panel.component';
   imports: [
     BrowserModule,
     GridsterModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    OpenhabRestService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
