@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Thing } from '../entity/thing';
 
 @Component({
@@ -7,13 +7,15 @@ import { Thing } from '../entity/thing';
   styleUrls: ['./panel.component.css']
 })
 export class PanelComponent implements OnInit {
-  thing: Thing;
+  @Input() thing: Thing;
 
-  constructor(thing: Thing) {
-    this.thing = thing;
-   }
+  constructor() { }
 
   ngOnInit() {
+  }
+
+  actionClick() {
+    this.thing.runPrimaryAction();
   }
 
 }
